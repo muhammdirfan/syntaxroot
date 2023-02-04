@@ -1,0 +1,67 @@
+.banner::after {
+  content: url("../assets/images/banner.svg");
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 0 !important;
+}
+.banner {
+  position: relative;
+  z-index: -1;
+}
+
+.header {
+  position: absolute;
+  background-color: transparent;
+  z-index: 2 !important;
+}
+
+/* service card styles */
+
+.service-card {
+  position: relative;
+  height: 352px;
+}
+
+.service-detail {
+  background-image: url("../assets/images/service-bg.png");
+  background-size: cover;
+  min-height: 109vh;
+  max-width: 100%;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  width: 20px;
+  height: 40px;
+  background-color: #f5f7fb;
+  transform: rotate(-45deg);
+}
+
+.complex {
+  background-image: url("../assets/images/complex.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30vh;
+}
+
+@media (max-width: 692px) {
+  .banner::after {
+    width: 70%;
+    height: 100vh;
+    top: -80px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 592px) {
+  .banner::after {
+    width: 70%;
+    height: 100vh;
+    top: -90px;
+    right: 150px;
+  }
+}
