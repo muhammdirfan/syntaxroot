@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { AppFooter } from "./components";
 import Home from "./screens/Home";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
+      <AppFooter />
     </Router>
   );
 }

@@ -43,6 +43,25 @@ import Logistics from "./icons/Logistics.svg";
 import Education from "./icons/Education.svg";
 import Fintech from "./icons/Fintech.svg";
 import Healthcare from "./icons/Healthcare.svg";
+import Qoutes from "./icons/qoutes.svg";
+import ArrowRight from "./icons/arrow-right.svg";
+import FooterLogo from "./icons/footerLogo.svg";
+import Arrow from "./icons/arrow.svg";
+import BlueArrow from "./icons/blueArrow.svg";
+import Location from "./icons/location.svg";
+import Phone from "./icons/phone.svg";
+
+// Clients
+import Ellipse11 from "./images/clients/Ellipse11.svg";
+import Ellipse12 from "./images/clients/Ellipse12.svg";
+import Ellipse13 from "./images/clients/Ellipse13.svg";
+
+// Social logos
+
+import Facebook from "./icons/social/facebook.svg";
+import Instagram from "./icons/social/instagram.svg";
+import Linkedin from "./icons/social/linkedin.svg";
+import Twitter from "./icons/social/twitter.svg";
 
 export {
   Banner,
@@ -85,4 +104,18 @@ export {
   Education,
   Fintech,
   Healthcare,
+  Qoutes,
+  Ellipse11,
+  Ellipse12,
+  Ellipse13,
+  ArrowRight,
+  FooterLogo,
+  Arrow,
+  BlueArrow,
+  Location,
+  Phone,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Twitter,
 };

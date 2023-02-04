@@ -1,4 +1,4 @@
-import { Button } from "flowbite-react";
+import { Button, Carousel } from "flowbite-react";
 import React from "react";
 import {
   Banner1,
@@ -39,8 +39,18 @@ import {
   Education,
   Healthcare,
   Logistics,
+  Ellipse11,
+  Ellipse12,
+  Ellipse13,
+  ArrowRight,
+  BlueArrow,
 } from "../../assets";
-import { Header, IndustryCard, ServiceCard } from "../../components";
+import {
+  Header,
+  IndustryCard,
+  ServiceCard,
+  Testmonails,
+} from "../../components";
 import "../../CustomStyles/index.css";
 
 const servicesData = [
@@ -134,6 +144,33 @@ const Industries = [
   },
 ];
 
+const testmonails = [
+  {
+    id: "001",
+    message:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    clientImage: Ellipse11,
+    clientName: "Savannah Nguyen",
+    clientDest: "Digital Marketing Director",
+  },
+  {
+    id: "002",
+    message:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    clientImage: Ellipse12,
+    clientName: "Wade Warren",
+    clientDest: "Digital Marketing Director",
+  },
+  {
+    id: "003",
+    message:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    clientImage: Ellipse13,
+    clientName: "Jerome Bell",
+    clientDest: "Digital Marketing Director",
+  },
+];
+
 const Home = () => {
   return (
     <>
@@ -152,9 +189,12 @@ const Home = () => {
                 //   color="blue"
                 outline={true}
                 pill={true}
-                className="border-1 border-blue50"
+                className="border-1 border-blue50 "
               >
-                <span className="text-blue50 px-4 text-sm">Let’s begin</span>
+                <div className="px-4 flex">
+                  <span className="text-blue50 text-sm pr-2">Let’s begin</span>
+                  <img src={BlueArrow} />
+                </div>
               </Button>
             </div>
             <img src={Banner1} width="50%" />
@@ -250,7 +290,7 @@ const Home = () => {
               Some of the major industry sectors that we have worked and
               provided solutions for are:
             </p>
-            <div className="grid grid-cols-12 gap-10 py-8 ">
+            <div className="grid grid-cols-12 gap-10 py-8">
               {Industries.map((item) => (
                 <div
                   key={item.id}
@@ -266,14 +306,46 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div>
+      <div className="container max-auto px-5 lg:px-24 py-0 pt-5 md:pt-0 lg:py-16">
+        <div className="">
           <img src={BlackBar} />
-          <h3 className="text-3xl font-bold py-2 font-libre">Industries</h3>
-          <p className="text-gray50 w-12/12 md:w-8/12 font-libre">
-            Some of the major industry sectors that we have worked and provided
-            solutions for are:
-          </p>
+          <h3 className="text-3xl font-bold py-2 font-libre w-4/12">
+            We love our Customers and They love us too
+          </h3>
+        </div>
+        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+          <Carousel
+            rightControl={
+              <>
+                <img
+                  src={ArrowRight}
+                  className="border-2 border-gray50 rounded-full p-1 rotate-180 absolute top-0 right-10"
+                />
+                <img
+                  src={ArrowRight}
+                  className="border-2 border-gray50 rounded-full p-1 absolute top-0 right-0"
+                />
+              </>
+            }
+            indicators={false}
+            className="relative"
+            slide={false}
+          >
+            <div className="grid grid-cols-12 gap-8 py-8">
+              {testmonails.map((item) => (
+                <div className="col-span-4" key={item.id}>
+                  <Testmonails item={item} />
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-12 gap-8 py-8">
+              {testmonails.map((item) => (
+                <div className="col-span-4" key={item.id}>
+                  <Testmonails item={item} />
+                </div>
+              ))}
+            </div>
+          </Carousel>
         </div>
       </div>
     </>
