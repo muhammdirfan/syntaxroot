@@ -309,11 +309,11 @@ const Home = () => {
       <div className="container max-auto px-5 lg:px-24 py-0 pt-5 md:pt-0 lg:py-16">
         <div className="">
           <img src={BlackBar} />
-          <h3 className="text-3xl font-bold py-2 font-libre w-4/12">
+          <h3 className="text-3xl font-bold py-2 font-libre w-12/12 lg:w-4/12">
             We love our Customers and They love us too
           </h3>
         </div>
-        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+        <div className="h-64 sm:h-64 xl:h-80 2xl:h-96">
           <Carousel
             rightControl={
               <>
@@ -333,14 +333,14 @@ const Home = () => {
           >
             <div className="grid grid-cols-12 gap-8 py-8">
               {testmonails.map((item) => (
-                <div className="col-span-4" key={item.id}>
+                <div className="col-span-12 lg:col-span-4" key={item.id}>
                   <Testmonails item={item} />
                 </div>
               ))}
             </div>
             <div className="grid grid-cols-12 gap-8 py-8">
               {testmonails.map((item) => (
-                <div className="col-span-4" key={item.id}>
+                <div className="col-span-12 lg:col-span-4" key={item.id}>
                   <Testmonails item={item} />
                 </div>
               ))}
