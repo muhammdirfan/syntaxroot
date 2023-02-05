@@ -13,7 +13,10 @@ import {
 
 const AppFooter = () => {
   return (
-    <Footer container={false} className="bg-blue100">
+    <div className="bg-blue100">
+      {/* <Footer
+        container={false}
+      > */}
       <div className="container max-auto px-5 lg:px-24 py-0 pt-5 md:pt-14 lg:pt-24 lg:py-4">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
@@ -94,7 +97,8 @@ const AppFooter = () => {
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center"></div>
         </div>
       </div>
-    </Footer>
+      {/* </Footer> */}
+    </div>
   );
 };
 

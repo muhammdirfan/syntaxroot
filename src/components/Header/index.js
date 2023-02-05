@@ -14,14 +14,14 @@ const Header = () => {
         //   $$typeof: Symbol(react.forward_ref),
         //   render: LinkWithRef,
         // }}
-        to="/navbars"
+        to="/"
       >
-        <img src={Brand} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+        <img src={Brand} className="mr-3 h-6 sm:h-9" alt="Logo" />
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
         <Navbar.Link
-          href="/navbars"
+          href="/"
           className="mx-2 md:mx-2 lg:mx-4 xl:mx-7 text-base text-dark50"
           active={false}
         >
@@ -50,7 +50,7 @@ const Header = () => {
           Career
         </Navbar.Link>
         <Navbar.Link
-          href="/navbars"
+          href="/contact-us"
           className="mx-2 md:mx-2 lg:mx-4 xl:mx-7 text-base text-dark50"
         >
           Contact Us

@@ -48,6 +48,57 @@
   height: 30vh;
 }
 
+.contact-us {
+  background-image: url("../assets/images/contact-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+  z-index: 1 !important;
+}
+
+.contact-us::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #3df5db;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  z-index: -1;
+}
+.contact-us::after {
+  content: "";
+  width: 130px;
+  height: 60px;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.contact-blue {
+  position: relative;
+}
+
+.contact-blue::before {
+  content: url("../assets/images/blue-vertor.png");
+  position: absolute;
+  top: -230px;
+  left: -80px;
+  height: 20vh;
+}
+
+.contact-blue::after {
+  content: url("../assets/icons/after-icon.svg");
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  /* height: 20vh; */
+}
+
 @media (max-width: 692px) {
   .banner::after {
     width: 70%;

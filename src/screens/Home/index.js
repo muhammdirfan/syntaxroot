@@ -174,8 +174,8 @@ const testmonails = [
 const Home = () => {
   return (
     <>
+      <Header />
       <div className="banner bg-gray200">
-        <Header />
         <div className="container mx-auto px-10 md:px-24 lg:px-36 pt-40 pb-10">
           <div className="flex justify-center items-center flex-wrap xl:flex-nowrap">
             <div className="pr-0 lg:pr-14">
