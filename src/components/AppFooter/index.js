@@ -13,7 +13,7 @@ import {
 
 const AppFooter = () => {
   return (
-    <div className="bg-blue100">
+    <div className="bg-blue200">
       {/* <Footer
         container={false}
       > */}
@@ -32,7 +32,7 @@ const AppFooter = () => {
                 Feel free to contact us.
               </p>
               <Button pill={true} color="#fff" className="bg-white text-white">
-                <span className="text-blue100 pr-2">Reach Us</span>
+                <span className="text-blue200 pr-2">Reach Us</span>
                 <img src={Arrow} />
               </Button>
             </div>
