@@ -50,6 +50,8 @@ import Arrow from "./icons/arrow.svg";
 import BlueArrow from "./icons/blueArrow.svg";
 import Location from "./icons/location.svg";
 import Phone from "./icons/phone.svg";
+import ArrowWhite from "./icons/arrow-white.svg";
+import ArrowLeft from "./icons/arrow-left.svg";
 
 // Clients
 import Ellipse11 from "./images/clients/Ellipse11.svg";
@@ -118,4 +120,6 @@ export {
   Instagram,
   Linkedin,
   Twitter,
+  ArrowWhite,
+  ArrowLeft,
 };

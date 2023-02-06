@@ -17,7 +17,7 @@ const AppFooter = () => {
       {/* <Footer
         container={false}
       > */}
-      <div className="container max-auto px-5 lg:px-24 py-0 pt-5 md:pt-14 lg:pt-24 lg:py-4">
+      <div className="container mx-auto px-5 lg:px-10 xl:px-24 py-0 pt-5 md:pt-14 lg:pt-24 lg:py-4">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
             <Footer.Brand href="/" src={FooterLogo} alt="Logo" />
@@ -91,7 +91,7 @@ const AppFooter = () => {
           </div>
         </div>
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <p className="text-white text-xs pt-16 text-center w-full">
+          <p className="text-white text-xs pt-16 text-right w-full">
             All Rights Reserved 2022
           </p>
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center"></div>

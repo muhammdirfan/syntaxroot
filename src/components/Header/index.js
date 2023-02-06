@@ -7,7 +7,7 @@ const Header = () => {
     <Navbar
       fluid={false}
       rounded={true}
-      className="header container w-11/12 ml-5 sm:ml-14 lg:ml-36 mr-0 lg:mr-24 px-16 py-8 my-5"
+      className="header container w-10/12 ml-5 sm:ml-14 lg:ml-36 mr-0 lg:mr-24 px-16 py-8 my-5"
     >
       <Navbar.Brand
         // as={{

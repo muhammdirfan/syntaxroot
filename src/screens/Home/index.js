@@ -44,6 +44,8 @@ import {
   Ellipse13,
   ArrowRight,
   BlueArrow,
+  ArrowWhite,
+  ArrowLeft,
 } from "../../assets";
 import {
   Header,
@@ -176,13 +178,13 @@ const Home = () => {
     <>
       <Header />
       <div className="banner bg-gray200">
-        <div className="container mx-auto px-5 md:px-24 lg:px-34 xl:px-36 pt-40 pb-10">
-          <div className="flex justify-center items-center flex-wrap xl:flex-nowrap">
-            <div className="pr-0 lg:pr-14">
+        <div className="container mx-auto px-5 md:px-2 lg:px-18 xl:px-36 pt-40 pb-10">
+          <div className="flex justify-center items-center flex-wrap lg:flex-nowrap">
+            <div className="pr-0 lg:pr-4">
               <h2 className="text-3xl md:text-5xl font-bold font-libre">
                 The Right Step
               </h2>
-              <p className="text-gray50 pr-0 md:pr-10 lg:pr-24 mr-0 md:mr-16 lg:mr-28 py-3 font-libre">
+              <p className="text-gray50 pr-0 md:pr-10 lg:pr-4 mr-0 md:mr-16 lg:mr-5 py-3 font-libre">
                 We help businesses to grow all across the globe. We meet our
                 clients, align with their ideas, and work with them to create an
                 impact on the globe.
@@ -193,8 +195,8 @@ const Home = () => {
                 pill={true}
                 className="border-1 border-blue50 bg-transparent"
               >
-                <div className="px-4 flex">
-                  <span className="text-blue50 text-sm pr-2">Let’s begin</span>
+                <div className="flex justify-between px-0">
+                  <span className="text-blue50 text-sm pr-8">Let’s begin</span>
                   <img src={BlueArrow} />
                 </div>
               </Button>
@@ -204,10 +206,10 @@ const Home = () => {
           <div className="py-5">
             <img src={Bar} />
             <h3 className="text-3xl font-bold py-2 font-libre">Our Services</h3>
-            <div className="grid grid-cols-12 gap-8 py-5">
+            <div className="grid grid-cols-12 gap-5 py-5">
               {servicesData.map((item) => (
                 <div
-                  className="col-span-12 md:col-span-6 xl:col-span-4"
+                  className="col-span-12 md:col-span-6 lg:col-span-4"
                   key={item.id}
                 >
                   <ServiceCard item={item} />
@@ -217,8 +219,8 @@ const Home = () => {
           </div>
         </div>
         <div className="service-detail flex items-center mb-10 py-20 pt-40 lg:pt-0">
-          <img src={BarImg} width="50" className="ml-2 lg:ml-10" />
-          <div className="container mx-auto px-10 md:px-24 lg:px-5">
+          <img src={BarImg} width="50" className="ml-2 lg:ml-10 pt-36" />
+          <div className="px-10 mx-2 lg:mx-14 md:px-24 lg:px-5">
             <div className="grid grid-cols-12 gap-8">
               <div className="col-span-12 lg:col-span-6 flex items-center">
                 <div className="w-8/12 md:w-11/12">
@@ -244,28 +246,31 @@ const Home = () => {
                     color="white"
                     className="bg-transparent pt-14 mx-0 px-0"
                   >
-                    <span className="text-white text-xl px-0 mx-0">
-                      Read more
-                    </span>
+                    <div className="flex justify-between">
+                      <span className="text-white text-xl px-0 pr-2 md:pr-3 lg:pr-4 mx-0">
+                        Read more
+                      </span>
+                      <img src={ArrowWhite} />
+                    </div>
                   </Button>
                 </div>
               </div>
               <div className="col-span-12 lg:col-span-6 flex justify-center">
-                <img src={ServiceDetail} className="pr-0 md:pr-20" />
+                <img src={ServiceDetail} className="pr-0 xl:pr-20" />
               </div>
             </div>
           </div>
         </div>
-        <div className="container max-auto px-10 lg:px-24 py-10">
+        <div className="container mx-auto px-5 lg:px-24 py-10">
           <img src={Bar} />
           <h3 className="text-3xl font-bold py-2 font-libre">
             Technologies stack
           </h3>
-          <div className="grid grid-cols-10 py-10 gap-x-12 md:gap-x-24 lg:gap-x-36 gap-y-16">
+          <div className="grid grid-cols-10 py-10 gap-x-8 md:gap-x-24 lg:gap-x-36 gap-y-16">
             {brands.map((item, index) => (
               <div
                 key={index}
-                className="col-span-4 md:col-span-3 lg:col-span-2"
+                className="col-span-5 sm:col-span-3 md:col-span-3 lg:col-span-2"
               >
                 <img src={item} width="" />
               </div>
@@ -273,7 +278,7 @@ const Home = () => {
           </div>
         </div>
         <div className="bg-blue100">
-          <div className="container max-auto px-5 lg:px-24 py-0 pt-5 md:pt-0 lg:py-10">
+          <div className="container mx-auto pt-5 md:pt-0 lg:py-10">
             <img src={WhiteBar} />
             <h3 className="text-white text-xl lg:text-4xl py-2 font-libre">
               Our Work Flow
@@ -320,8 +325,8 @@ const Home = () => {
             rightControl={
               <>
                 <img
-                  src={ArrowRight}
-                  className="border-2 border-gray50 rounded-full p-1 rotate-180 absolute top-0 right-10"
+                  src={ArrowLeft}
+                  className="border-2 border-gray300 bg-gray300 rounded-full p-1 absolute top-0 right-10"
                 />
                 <img
                   src={ArrowRight}
