@@ -20,7 +20,7 @@
 
 .service-card {
   position: relative;
-  height: 352px;
+  min-height: 352px;
 }
 
 .service-detail {

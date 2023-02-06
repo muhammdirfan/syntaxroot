@@ -19,7 +19,7 @@ const Header = () => {
         <img src={Brand} className="mr-3 h-6 sm:h-9" alt="Logo" />
       </Navbar.Brand>
       <Navbar.Toggle />
-      <Navbar.Collapse>
+      <Navbar.Collapse className="bg-white md:bg-transparent">
         <Navbar.Link
           href="/"
           className="mx-2 md:mx-2 lg:mx-4 xl:mx-7 text-base text-dark50"

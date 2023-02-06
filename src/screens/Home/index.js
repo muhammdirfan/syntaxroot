@@ -176,10 +176,12 @@ const Home = () => {
     <>
       <Header />
       <div className="banner bg-gray200">
-        <div className="container mx-auto px-10 md:px-24 lg:px-36 pt-40 pb-10">
+        <div className="container mx-auto px-5 md:px-24 lg:px-34 xl:px-36 pt-40 pb-10">
           <div className="flex justify-center items-center flex-wrap xl:flex-nowrap">
             <div className="pr-0 lg:pr-14">
-              <h2 className="text-5xl font-bold font-libre">The Right Step</h2>
+              <h2 className="text-3xl md:text-5xl font-bold font-libre">
+                The Right Step
+              </h2>
               <p className="text-gray50 pr-0 md:pr-10 lg:pr-24 mr-0 md:mr-16 lg:mr-28 py-3 font-libre">
                 We help businesses to grow all across the globe. We meet our
                 clients, align with their ideas, and work with them to create an
@@ -189,7 +191,7 @@ const Home = () => {
                 //   color="blue"
                 outline={true}
                 pill={true}
-                className="border-1 border-blue50 "
+                className="border-1 border-blue50 bg-transparent"
               >
                 <div className="px-4 flex">
                   <span className="text-blue50 text-sm pr-2">Let’s begin</span>
@@ -205,7 +207,7 @@ const Home = () => {
             <div className="grid grid-cols-12 gap-8 py-5">
               {servicesData.map((item) => (
                 <div
-                  className="col-span-12 md:col-span-6 lg:col-span-4"
+                  className="col-span-12 md:col-span-6 xl:col-span-4"
                   key={item.id}
                 >
                   <ServiceCard item={item} />
@@ -280,10 +282,10 @@ const Home = () => {
           </div>
         </div>
         <div className="grid grid-cols-12 gap-2">
-          <div className="col-span-0 md:col-span-2">
+          <div className="col-span-0 lg:col-span-2">
             <img src={LeftGrid} className="h-full" />
           </div>
-          <div className="col-span-8 my-10 lg:my-auto w-12/12 container mx-auto">
+          <div className="col-span-12 px-10 md:px-2 lg:col-span-8 my-10 lg:my-auto w-12/12 container mx-auto">
             <img src={BlackBar} />
             <h3 className="text-3xl font-bold py-2 font-libre">Industries</h3>
             <p className="text-gray50 w-12/12 md:w-8/12 font-libre">
@@ -301,19 +303,19 @@ const Home = () => {
               ))}
             </div>
           </div>
-          <div className="col-span-0 md:col-span-2 flex justify-end">
+          <div className="col-span-0 lg:col-span-2 flex justify-end">
             <img src={RightGrid} className="h-full" />
           </div>
         </div>
       </div>
-      <div className="container max-auto px-5 lg:px-24 py-0 pt-5 md:pt-0 lg:py-16">
+      <div className="container mx-auto px-5 lg:px-10 xl:px-24 py-0 pt-5 md:pt-0 lg:py-16">
         <div className="">
           <img src={BlackBar} />
-          <h3 className="text-3xl font-bold py-2 font-libre w-12/12 lg:w-4/12">
+          <h3 className="text-3xl font-bold py-2 font-libre w-12/12 lg:w-6/12 xl:w-4/12">
             We love our Customers and They love us too
           </h3>
         </div>
-        <div className="h-64 sm:h-64 xl:h-80 2xl:h-96">
+        <div className="h-screen sm:h-64 md:h-screen lg:h-80 xl:h-80 2xl:h-96">
           <Carousel
             rightControl={
               <>
