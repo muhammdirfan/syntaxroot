@@ -27,8 +27,18 @@
   background-image: url("../assets/images/service-bg.png");
   background-size: cover;
   background-position: center;
-  min-height: 90vh;
+  min-height: 120vh;
   max-width: 100%;
+  position: relative;
+}
+
+.service-detail::before {
+  content: url("../assets/icons/circle-icon.svg");
+  position: absolute;
+  bottom: 52px;
+  right: 0px;
+  height: 20vh;
+  z-index: 0;
 }
 
 .service-card::after {

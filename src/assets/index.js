@@ -36,7 +36,7 @@ import Product from "./icons/product.svg";
 import Quality from "./icons/quality.svg";
 import Webdev from "./icons/webdev.svg";
 import WhiteBar from "./icons/white-bar.svg";
-import LeftGrid from "./icons/leftGrid.svg";
+import LeftGrid from "./images/leftGrid.png";
 import RightGrid from "./icons/rightGrid.png";
 import BlackBar from "./icons/blackBar.svg";
 import Logistics from "./icons/Logistics.svg";
@@ -52,6 +52,8 @@ import Location from "./icons/location.svg";
 import Phone from "./icons/phone.svg";
 import ArrowWhite from "./icons/arrow-white.svg";
 import ArrowLeft from "./icons/arrow-left.svg";
+import Ellipse from "./icons/Ellipse.svg";
+import CircleIcon from "./icons/circle-icon.svg";
 
 // Clients
 import Ellipse11 from "./images/clients/Ellipse11.svg";
@@ -122,4 +124,6 @@ export {
   Twitter,
   ArrowWhite,
   ArrowLeft,
+  Ellipse,
+  CircleIcon,
 };

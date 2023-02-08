@@ -222,12 +222,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="service-detail flex items-center mb-10 py-20 pt-40 lg:pt-0">
+        <div className="service-detail flex items-center mb-10 pt-40 lg:pt-0">
           <img src={BarImg} width="50" className="ml-2 lg:ml-10 pt-36" />
           <div className="px-10 mx-2 lg:mx-14 md:px-24 lg:px-5">
             <div className="grid grid-cols-12 gap-8">
               <div className="col-span-12 lg:col-span-6 flex items-center">
-                <div className="w-8/12 md:w-11/12">
+                <div className="w-9/12 md:w-11/12">
                   <img src={WhiteBar} />
                   <h3 className="text-white text-xl lg:text-4xl py-2 font-libre">
                     Working in IT services for the past decade
@@ -265,12 +265,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="px-5 lg:px-24 py-10">
+        <div className="container mx-auto px-5 md:px-10 lg:px-0 xl:pl-8">
           <img src={Bar} />
           <h3 className="text-3xl font-bold py-2 font-libre">
             Technologies stack
           </h3>
-          <div className="grid grid-cols-10 py-10 gap-x-8 md:gap-x-24 lg:gap-x-36 gap-y-16">
+          <div className="grid grid-cols-10 py-10 gap-x-8 md:gap-x-24 lg:gap-x-28 xl:gap-36 gap-y-16">
             {brands.map((item, index) => (
               <div
                 key={index}
@@ -282,7 +282,7 @@ const Home = () => {
           </div>
         </div>
         <div className="bg-blue100">
-          <div className="container mx-auto pt-10 lg:px-2 xl:px-28 lg:py-10">
+          <div className="container mx-auto pt-10 px-2 md:px-5 lg:px-2 xl:px-28 lg:py-10">
             <img src={WhiteBar} />
             <h3 className="text-white text-xl lg:text-4xl py-2 font-libre">
               Our Work Flow
