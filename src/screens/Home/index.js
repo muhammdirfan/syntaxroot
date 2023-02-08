@@ -178,7 +178,7 @@ const Home = () => {
     <>
       <Header />
       <div className="banner bg-gray200">
-        <div className="container mx-auto px-5 md:px-2 lg:px-18 xl:px-36 pt-40 pb-10">
+        <div className="container mx-auto px-5 md:px-2 lg:px-8 xl:px-36 pt-40 pb-10">
           <div className="flex justify-center items-center flex-wrap lg:flex-nowrap">
             <div className="pr-0 lg:pr-4">
               <h2 className="text-3xl md:text-5xl font-bold font-libre">
@@ -193,10 +193,10 @@ const Home = () => {
                 //   color="blue"
                 outline={true}
                 pill={true}
-                className="border-1 border-blue50 bg-transparent"
+                className="border-1 border-blue200 bg-transparent"
               >
                 <div className="flex justify-between px-0">
-                  <span className="text-blue50 text-sm pr-8">Let’s begin</span>
+                  <span className="text-blue50 text-md pr-8">Let’s begin</span>
                   <img src={BlueArrow} />
                 </div>
               </Button>
@@ -204,8 +204,12 @@ const Home = () => {
             <img src={Banner1} width="50%" />
           </div>
           <div className="py-5">
-            <img src={Bar} />
-            <h3 className="text-3xl font-bold py-2 font-libre">Our Services</h3>
+            <div className="py-2 lg:py-5">
+              <img src={Bar} />
+              <h3 className="text-3xl font-bold py-2 font-libre">
+                Our Services
+              </h3>
+            </div>
             <div className="grid grid-cols-12 gap-5 py-5">
               {servicesData.map((item) => (
                 <div
@@ -261,7 +265,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-5 lg:px-24 py-10">
+        <div className="px-5 lg:px-24 py-10">
           <img src={Bar} />
           <h3 className="text-3xl font-bold py-2 font-libre">
             Technologies stack
@@ -278,7 +282,7 @@ const Home = () => {
           </div>
         </div>
         <div className="bg-blue100">
-          <div className="container mx-auto pt-5 md:pt-0 lg:py-10">
+          <div className="container mx-auto pt-10 lg:px-2 xl:px-28 lg:py-10">
             <img src={WhiteBar} />
             <h3 className="text-white text-xl lg:text-4xl py-2 font-libre">
               Our Work Flow

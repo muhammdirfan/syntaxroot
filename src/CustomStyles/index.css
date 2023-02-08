@@ -26,7 +26,8 @@
 .service-detail {
   background-image: url("../assets/images/service-bg.png");
   background-size: cover;
-  min-height: 109vh;
+  background-position: center;
+  min-height: 90vh;
   max-width: 100%;
 }
 
