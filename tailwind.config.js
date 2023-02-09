@@ -2,6 +2,12 @@
 
 const defaultTheme = require("tailwindcss/defaultTheme");
 
+{
+  /* <style> */
+}
+// import 'https://fonts.googleapis.com/css2?family=Sen&display=swap'
+// </style>
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -33,10 +39,7 @@ module.exports = {
       dark50: "#263238",
     },
     fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
-      // sen: ["sen"],
-      libre: ['"Libre Baskerville"', ...defaultTheme.fontFamily.sans],
+      sen: ["Sen", "sans-serif"],
     },
     extend: {
       spacing: {
