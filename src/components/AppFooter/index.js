@@ -21,7 +21,7 @@ const AppFooter = () => {
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
             <Footer.Brand href="/" src={FooterLogo} alt="Logo" />
-            <h2 className="text-white text-4xl font-bold py-2 font-libre">
+            <h2 className="text-white text-2xl md:text-4xl font-bold py-2 font-libre">
               Talk to our Expert Now
             </h2>
             <p className="text-white text-sm font-libre">
@@ -37,7 +37,7 @@ const AppFooter = () => {
               </Button>
             </div>
           </div>
-          <div className="grid grid-cols-12 gap-8">
+          <div className="grid grid-cols-12 gap-5 md:gap-8">
             <div className="col-span-6">
               <Footer.Title title="" />
               <Footer.LinkGroup col={true}>

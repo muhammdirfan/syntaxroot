@@ -178,19 +178,18 @@ const Home = () => {
     <>
       <Header />
       <div className="banner bg-gray200">
-        <div className="container mx-auto px-5 md:px-2 lg:px-8 xl:px-36 pt-40 pb-10">
-          <div className="flex justify-center items-center flex-wrap lg:flex-nowrap">
+        <div className="w-11/12 mx-auto px-5 md:px-2 lg:px-2 xl:px-4 pt-40 pb-10">
+          <div className="flex justify-center items-center flex-wrap lg:flex-nowrap px-24">
             <div className="pr-0 lg:pr-4">
               <h2 className="text-3xl md:text-5xl font-bold font-libre">
                 The Right Step
               </h2>
-              <p className="text-gray50 pr-0 md:pr-10 lg:pr-4 mr-0 md:mr-16 lg:mr-5 py-3 font-libre">
+              <p className="text-gray50 pr-0 md:pr-10 lg:pr-4 mr-0 md:mr-16 lg:mr-5 py-4 font-libre w-12/12 xl:w-7/12">
                 We help businesses to grow all across the globe. We meet our
                 clients, align with their ideas, and work with them to create an
                 impact on the globe.
               </p>
               <Button
-                //   color="blue"
                 outline={true}
                 pill={true}
                 className="border-1 border-blue200 bg-transparent"
@@ -227,7 +226,7 @@ const Home = () => {
           <div className="px-10 mx-2 lg:mx-14 md:px-24 lg:px-5">
             <div className="grid grid-cols-12 gap-8">
               <div className="col-span-12 lg:col-span-6 flex items-center">
-                <div className="w-9/12 md:w-11/12">
+                <div className="w-7/12 sm:w-9/12 md:w-11/12">
                   <img src={WhiteBar} />
                   <h3 className="text-white text-xl lg:text-4xl py-2 font-libre">
                     Working in IT services for the past decade
@@ -265,12 +264,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-5 md:px-10 lg:px-0 xl:pl-8">
+        <div className="w-11/12 mx-auto px-5 md:px-5 lg:px-0 xl:pl-8">
           <img src={Bar} />
           <h3 className="text-3xl font-bold py-2 font-libre">
             Technologies stack
           </h3>
-          <div className="grid grid-cols-10 py-10 gap-x-8 md:gap-x-24 lg:gap-x-28 xl:gap-36 gap-y-16">
+          <div className="grid grid-cols-10 py-10 gap-x-8 sm:gap-x-16 md:gap-x-28 lg:gap-x-24 xl:gap-36 gap-y-16">
             {brands.map((item, index) => (
               <div
                 key={index}
