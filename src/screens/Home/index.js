@@ -60,6 +60,7 @@ const servicesData = [
     id: "001",
     image: Mobileapp,
     serviceTitle: "Mobile app development",
+    navigationLink: "app-development",
     sercviceDetail:
       "Creative design and development of mobile app for every business can generate extremely good results, brand loyalty and dependable user retention. We work closely with our clients to create user friendly yet smartly functional apps",
   },
@@ -67,6 +68,7 @@ const servicesData = [
     id: "002",
     image: Webdev,
     serviceTitle: "Web development",
+    navigationLink: "web-development",
     sercviceDetail:
       "Syntax Root is  offering creative Web designing for all kind of businesses. We are master of providing flexible delivery models of websites, as one of the leading web development company.",
   },
@@ -74,6 +76,7 @@ const servicesData = [
     id: "003",
     image: Product,
     serviceTitle: "Product design",
+    navigationLink: "product-design",
     sercviceDetail:
       "Our team consist of capable designers who have spent years designing delightful and usable products. Whether you need a new UI or a upgradation on an existing product design.",
   },
@@ -81,6 +84,7 @@ const servicesData = [
     id: "004",
     image: Quality,
     serviceTitle: "Quality Assurance",
+    navigationLink: "quality-assurance",
     sercviceDetail:
       "We maintain desired level of quality in a service or product, especially by means of attention to every stage of the process of delivery or production.",
   },
@@ -88,6 +92,7 @@ const servicesData = [
     id: "005",
     image: ITConsulting,
     serviceTitle: "IT consulting",
+    navigationLink: "IT-consultion",
     sercviceDetail:
       "Our free consultancy department help clients assess different technology strategies and, in doing so, align their technology strategies with their business or process strategies.",
   },
@@ -95,6 +100,7 @@ const servicesData = [
     id: "006",
     image: Plateform,
     serviceTitle: "Platform selection",
+    navigationLink: "platform-selection",
     sercviceDetail:
       "Platform selection is no simple task. As technology capabilities are increasing, We help to ensure to choose the right technology for the the production of your innovation or vision. We also help to select the best ‘fitʼ and reduce technology investment risks.",
   },
@@ -178,38 +184,41 @@ const Home = () => {
     <>
       <Header />
       <div className="banner bg-gray200">
-        <div className="w-11/12 mx-auto px-5 md:px-2 lg:px-2 xl:px-4 pt-40 pb-10">
-          <div className="flex justify-center items-center flex-wrap lg:flex-nowrap px-24">
+        <div className="container w-11/12 mx-auto px-5 md:px-2 lg:px-2 xl:px-4 pt-40 pb-10">
+          <div className="flex justify-center items-center flex-wrap lg:flex-nowrap px-4 mx-24">
             <div className="pr-0 lg:pr-4">
-              <h2 className="text-3xl md:text-5xl font-bold font-libre">
+              <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold ">
                 The Right Step
               </h2>
-              <p className="text-gray50 pr-0 md:pr-10 lg:pr-4 mr-0 md:mr-16 lg:mr-5 py-4 font-libre w-12/12 xl:w-7/12">
+              <p className="text-gray50 pr-0 md:pr-10 lg:pr-4 mr-0 md:mr-16 lg:mr-5 py-4  w-12/12 xl:w-8/12">
                 We help businesses to grow all across the globe. We meet our
                 clients, align with their ideas, and work with them to create an
                 impact on the globe.
               </p>
               <Button
-                outline={true}
+                outline={false}
                 pill={true}
-                className="border-1 border-blue200 bg-transparent"
+                style={{
+                  border: "1px solid #174781",
+                  backgroundColor: "#fff",
+                  padding: "0px",
+                }}
+                className="bg-white shadow-none outline-line"
               >
                 <div className="flex justify-between px-0">
-                  <span className="text-blue50 text-md pr-8">Let’s begin</span>
+                  <span className="text-blue50 text-md pr-5">Let’s begin</span>
                   <img src={BlueArrow} />
                 </div>
               </Button>
             </div>
             <img src={Banner1} width="50%" />
           </div>
-          <div className="py-5">
+          <div className="py-5" id="our-services">
             <div className="py-2 lg:py-5">
               <img src={Bar} />
-              <h3 className="text-3xl font-bold py-2 font-libre">
-                Our Services
-              </h3>
+              <h3 className="text-3xl font-bold py-2 ">Our Services</h3>
             </div>
-            <div className="grid grid-cols-12 gap-5 py-5">
+            <div className="grid grid-cols-12 gap-5 xl:gap-8 py-5">
               {servicesData.map((item) => (
                 <div
                   className="col-span-12 md:col-span-6 lg:col-span-4"
@@ -226,16 +235,16 @@ const Home = () => {
           <div className="px-10 mx-2 lg:mx-14 md:px-24 lg:px-5">
             <div className="grid grid-cols-12 gap-8">
               <div className="col-span-12 lg:col-span-6 flex items-center">
-                <div className="w-7/12 sm:w-9/12 md:w-11/12">
+                <div className="w-8/12 sm:w-9/12 md:w-11/12">
                   <img src={WhiteBar} />
-                  <h3 className="text-white text-xl lg:text-4xl py-2 font-libre">
+                  <h3 className="text-white text-xl lg:text-4xl py-2 ">
                     Working in IT services for the past decade
                   </h3>
-                  <p className="text-white py-2 font-libre text-sm">
+                  <p className="text-white py-2  text-sm">
                     Developing and providing web and mobile software + apps for
                     clients throughout the globe.
                   </p>
-                  <p className="text-white font-libre text-sm">
+                  <p className="text-white  text-sm">
                     Syntax is providing full service software solutions to the
                     clients and customers, with a pool of latest tech-groomed
                     specialists working with the modern up to date tech stack.
@@ -264,12 +273,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="w-11/12 mx-auto px-5 md:px-5 lg:px-0 xl:pl-8">
+        <div className="container w-11/12 mx-auto px-5 md:px-5 lg:px-0 xl:pl-8">
           <img src={Bar} />
-          <h3 className="text-3xl font-bold py-2 font-libre">
-            Technologies stack
-          </h3>
-          <div className="grid grid-cols-10 py-10 gap-x-8 sm:gap-x-16 md:gap-x-28 lg:gap-x-24 xl:gap-36 gap-y-16">
+          <h3 className="text-3xl font-bold py-2 ">Technologies stack</h3>
+          <div className="grid grid-cols-10 py-10 gap-x-8 sm:gap-x-14 md:gap-x-28 lg:gap-x-24 xl:gap-x-36 gap-y-16">
             {brands.map((item, index) => (
               <div
                 key={index}
@@ -281,12 +288,12 @@ const Home = () => {
           </div>
         </div>
         <div className="bg-blue100">
-          <div className="container mx-auto pt-10 px-2 md:px-5 lg:px-2 xl:px-28 lg:py-10">
+          <div className="container mx-auto pt-10 px-2 md:px-5 lg:px-12 xl:px-28 lg:py-5 xl:py-14">
             <img src={WhiteBar} />
-            <h3 className="text-white text-xl lg:text-4xl py-2 font-libre">
+            <h3 className="text-white text-xl lg:text-4xl py-2 ">
               Our Work Flow
             </h3>
-            <div className="complex my-20"></div>
+            <div className="complex mt-5"></div>
           </div>
         </div>
         <div className="grid grid-cols-12 gap-2">
@@ -295,8 +302,8 @@ const Home = () => {
           </div>
           <div className="col-span-12 px-10 md:px-2 lg:col-span-8 my-10 lg:my-auto w-12/12 container mx-auto">
             <img src={BlackBar} />
-            <h3 className="text-3xl font-bold py-2 font-libre">Industries</h3>
-            <p className="text-gray50 w-12/12 md:w-8/12 font-libre">
+            <h3 className="text-3xl font-bold py-2 ">Industries</h3>
+            <p className="text-gray50 w-12/12 md:w-8/12 ">
               Some of the major industry sectors that we have worked and
               provided solutions for are:
             </p>
@@ -306,7 +313,7 @@ const Home = () => {
                   key={item.id}
                   className="col-span-9 px-auto md:col-span-6 lg:col-span-3"
                 >
-                  <IndustryCard item={item} />
+                  <IndustryCard item={item} bgColor="bg-white" />
                 </div>
               ))}
             </div>
@@ -319,7 +326,7 @@ const Home = () => {
       <div className="container mx-auto px-5 lg:px-10 xl:px-24 py-0 pt-5 md:pt-0 lg:py-16">
         <div className="">
           <img src={BlackBar} />
-          <h3 className="text-3xl font-bold py-2 font-libre w-12/12 lg:w-6/12 xl:w-4/12">
+          <h3 className="text-3xl font-bold py-2  w-12/12 lg:w-6/12 xl:w-4/12">
             We love our Customers and They love us too
           </h3>
         </div>

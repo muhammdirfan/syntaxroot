@@ -2,8 +2,20 @@
 import Banner from "./images/banner.png";
 import Brand from "./images/brand.svg";
 import Banner1 from "./images/banner1.svg";
+import Banner2 from "./images/banner2.svg";
 import BarImg from "./images/bar-img.png";
 import ServiceDetail from "./images/serviceDetail.png";
+import CareerBanner from "./images/careerBanner.svg";
+import ITBanner from "./images/ITBanner.svg";
+import ITImg from "./images/ITImg.png";
+import PlateFormBanner from "./images/plateFormBanner.svg";
+import PlateformImg from "./images/plateformImg.png";
+import ProdDesignBanner from "./images/prodDesignBanner.svg";
+import ProdDesignImg from "./images/prodDesignImg.png";
+import QuailtyBanner from "./images/QuailtyBanner.svg";
+import QuailtyImg from "./images/QuailtyImg.png";
+import Webdevbanner from "./images/webdevbanner.svg";
+import WebdevImg from "./images/webdevImg.png";
 
 // Brands
 import Android from "./icons/brands/android.svg";
@@ -54,6 +66,44 @@ import ArrowWhite from "./icons/arrow-white.svg";
 import ArrowLeft from "./icons/arrow-left.svg";
 import Ellipse from "./icons/Ellipse.svg";
 import CircleIcon from "./icons/circle-icon.svg";
+import AndroidIcon from "./icons/android.svg";
+import IosIcon from "./icons/Ios.svg";
+import HybridIcon from "./icons/hybrid.svg";
+import AppSupportIcon from "./icons/app-support.svg";
+import Deployment from "./icons/deployment.svg";
+import Engineering from "./icons/engineering.svg";
+import QualityIcon from "./icons/quality-icon.svg";
+import Requirement from "./icons/requirement.svg";
+
+// newIcons
+
+import Architecture from "./icons/new/Architecture.svg";
+import Assessment from "./icons/new/Assessment.svg";
+import AutomationTesting from "./icons/new/AutomationTesting.svg";
+import Backend from "./icons/new/Backend.svg";
+import CompTesting from "./icons/new/CompTesting.svg";
+import Discovery from "./icons/new/Discovery.svg";
+import Execution from "./icons/new/Execution.svg";
+import Frontend from "./icons/new/Frontend.svg";
+import Hosting from "./icons/new/Hosting.svg";
+import ManualTesting from "./icons/new/ManualTesting.svg";
+import MobAppDesign from "./icons/new/MobAppDesign.svg";
+import MVP from "./icons/new/MVP.svg";
+import PerfomanceTesting from "./icons/new/PerfomanceTesting.svg";
+import Planning from "./icons/new/Planning.svg";
+import PlanningPhase from "./icons/new/PlanningPhase.svg";
+import POC from "./icons/new/POC.svg";
+import QATeam from "./icons/new/QATeam.svg";
+import Reporting from "./icons/new/Reporting.svg";
+import RequirementIdentification from "./icons/new/RequirementIdentification.svg";
+import SecurityTesting from "./icons/new/SecurityTesting.svg";
+import UIdesign from "./icons/new/UIdesign.svg";
+import UnitTesting from "./icons/new/UnitTesting.svg";
+import UXdesign from "./icons/new/UXdesign.svg";
+import UXUI from "./icons/new/UXUI.svg";
+import Validation from "./icons/new/Validation.svg";
+import WebDesign from "./icons/new/WebDesign.svg";
+import Wireframse from "./icons/new/Wireframse.svg";
 
 // Clients
 import Ellipse11 from "./images/clients/Ellipse11.svg";
@@ -126,4 +176,51 @@ export {
   ArrowLeft,
   Ellipse,
   CircleIcon,
+  Banner2,
+  AndroidIcon,
+  IosIcon,
+  HybridIcon,
+  AppSupportIcon,
+  Deployment,
+  Engineering,
+  QualityIcon,
+  Requirement,
+  CareerBanner,
+  ITBanner,
+  ITImg,
+  PlateFormBanner,
+  PlateformImg,
+  ProdDesignBanner,
+  ProdDesignImg,
+  QuailtyBanner,
+  QuailtyImg,
+  Webdevbanner,
+  WebdevImg,
+  Architecture,
+  Assessment,
+  AutomationTesting,
+  Backend,
+  CompTesting,
+  Discovery,
+  Execution,
+  Frontend,
+  Hosting,
+  ManualTesting,
+  MobAppDesign,
+  MVP,
+  PerfomanceTesting,
+  Planning,
+  PlanningPhase,
+  POC,
+  QATeam,
+  Reporting,
+  RequirementIdentification,
+  SecurityTesting,
+  UIdesign,
+  UnitTesting,
+  UXdesign,
+  UXUI,
+  Validation,
+  WebDesign,
+  Wireframse,
 };

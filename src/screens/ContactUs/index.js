@@ -13,7 +13,7 @@ const ContactUs = () => {
           <div className="grid grid-cols-12 gap-0 pt-10">
             <div className="col-span-12 xl:col-span-6 px-14 py-10 pt-20 contact-us">
               <img src={BlackBar} />
-              <h3 className="text-3xl font-bold py-2 font-libre">Contact us</h3>
+              <h3 className="text-3xl font-bold py-2 ">Contact us</h3>
               <form className="flex flex-col gap-4 py-5">
                 <div>
                   <input

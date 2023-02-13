@@ -36,10 +36,13 @@ module.exports = {
       gray100: "#788199",
       gray200: "#F5F7FB",
       gray300: "#F5F5F5",
+      gray400: "#F9F9F9",
+      gray500: "#E5E5E5",
       dark50: "#263238",
     },
     fontFamily: {
       sen: ["Sen", "sans-serif"],
+      Roboto: ["Roboto Mono", "monospace"],
     },
     extend: {
       spacing: {

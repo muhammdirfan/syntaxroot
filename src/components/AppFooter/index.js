@@ -17,18 +17,18 @@ const AppFooter = () => {
       {/* <Footer
         container={false}
       > */}
-      <div className="container mx-auto px-5 lg:px-10 xl:px-24 py-0 pt-5 md:pt-14 lg:pt-24 lg:py-4">
-        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
+      <div className="container mx-auto px-5 lg:px-10 xl:px-14 py-0 pt-5 md:pt-14 lg:pt-24 lg:py-4">
+        <div className="grid gap-x-14 w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
             <Footer.Brand href="/" src={FooterLogo} alt="Logo" />
-            <h2 className="text-white text-2xl md:text-4xl font-bold py-2 font-libre">
+            <h2 className="text-white text-2xl md:text-4xl font-bold py-2 ">
               Talk to our Expert Now
             </h2>
-            <p className="text-white text-sm font-libre">
+            <p className="text-white text-sm ">
               our free consultation service is available you just
             </p>
             <div className="mt-8">
-              <p className="text-white text-sm font-libre py-1">
+              <p className="text-white text-sm  py-1">
                 Feel free to contact us.
               </p>
               <Button pill={true} color="#fff" className="bg-white text-white">
