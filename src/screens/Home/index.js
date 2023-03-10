@@ -1,5 +1,6 @@
 import { Button, Carousel } from "flowbite-react";
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Banner1,
   Bar,
@@ -102,7 +103,7 @@ const servicesData = [
     serviceTitle: "Platform selection",
     navigationLink: "platform-selection",
     sercviceDetail:
-      "Platform selection is no simple task. As technology capabilities are increasing, We help to ensure to choose the right technology for the the production of your innovation or vision. We also help to select the best ‘fitʼ and reduce technology investment risks.",
+      "Platform selection is no simple task. As technology capabilities are increasing, We help to ensure to choose the right technology for the production of your innovation or vision. We also help to select the best ‘fitʼ and reduce technology investment risks.",
   },
 ];
 
@@ -180,38 +181,47 @@ const testmonails = [
 ];
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />
       <div className="banner bg-gray200">
-        <div className="container w-11/12 mx-auto px-5 md:px-2 lg:px-2 xl:px-4 pt-40 pb-10">
-          <div className="flex justify-center items-center flex-wrap lg:flex-nowrap px-4 mx-24">
-            <div className="pr-0 lg:pr-4">
+        <div className="mainContainer pt-40 pb-10">
+          <div className="grid grid-cols-12 gap-8 pr-4 items-center">
+            <div className="col-span-12 lg:col-span-6 pr-0 lg:pr-4">
               <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold ">
                 The Right Step
               </h2>
-              <p className="text-gray50 pr-0 md:pr-10 lg:pr-4 mr-0 md:mr-16 lg:mr-5 py-4  w-12/12 xl:w-8/12">
+              <p className="text-gray50 pr-0 md:pr-10 lg:pr-4 mr-0 md:mr-16 lg:mr-5 py-5 w-12/12 xl:w-8/12">
                 We help businesses to grow all across the globe. We meet our
                 clients, align with their ideas, and work with them to create an
                 impact on the globe.
               </p>
-              <Button
-                outline={false}
-                pill={true}
-                style={{
-                  border: "1px solid #174781",
-                  backgroundColor: "#fff",
-                  padding: "0px",
-                }}
-                className="bg-white shadow-none outline-line"
-              >
-                <div className="flex justify-between px-0">
-                  <span className="text-blue50 text-md pr-5">Let’s begin</span>
-                  <img src={BlueArrow} />
-                </div>
-              </Button>
+              <Link to="/contact-us">
+                <Button
+                  outline={false}
+                  pill={true}
+                  style={{
+                    border: "1px solid #174781",
+                    backgroundColor: "#fff",
+                    padding: "0px",
+                  }}
+                  className="bg-white shadow-none outline-line"
+                >
+                  <div className="flex justify-between px-0">
+                    <span className="text-blue50 text-md pr-5">
+                      Let’s begin
+                    </span>
+                    <img src={BlueArrow} />
+                  </div>
+                </Button>
+              </Link>
             </div>
-            <img src={Banner1} width="50%" />
+            <div className="col-span-12 lg:col-span-6 flex justify-end">
+              <img src={Banner1} />
+            </div>
           </div>
           <div className="py-5" id="our-services">
             <div className="py-2 lg:py-5">
@@ -231,8 +241,8 @@ const Home = () => {
           </div>
         </div>
         <div className="service-detail flex items-center mb-10 pt-40 lg:pt-0">
-          <img src={BarImg} width="50" className="ml-2 lg:ml-10 pt-36" />
-          <div className="px-10 mx-2 lg:mx-14 md:px-24 lg:px-5">
+          <img src={BarImg} width="50" className="ml-2 lg:ml-10 xl:ml-10" />
+          <div className="mx-9 blueContainer">
             <div className="grid grid-cols-12 gap-8">
               <div className="col-span-12 lg:col-span-6 flex items-center">
                 <div className="w-8/12 sm:w-9/12 md:w-11/12">
@@ -245,38 +255,27 @@ const Home = () => {
                     clients throughout the globe.
                   </p>
                   <p className="text-white  text-sm">
-                    Syntax is providing full service software solutions to the
-                    clients and customers, with a pool of latest tech-groomed
-                    specialists working with the modern up to date tech stack.
-                    We strive in providing solutions for enterprise use with
-                    complete and customized execution. Our clients located
-                    across the globe are reaping the benefits of our immaculate
-                    services and maintenance throughout the year for any kind of
-                    consultancy needed.
+                    Syntaxroot is providing full service software solutions to
+                    the clients and customers, with a pool of latest
+                    tech-groomed specialists working with the modern up to date
+                    tech stack. We strive in providing solutions for enterprise
+                    use with complete and customized execution. Our clients
+                    located across the globe are reaping the benefits of our
+                    immaculate services and maintenance throughout the year for
+                    any kind of consultancy needed.
                   </p>
-                  <Button
-                    color="white"
-                    className="bg-transparent pt-14 mx-0 px-0"
-                  >
-                    <div className="flex justify-between">
-                      <span className="text-white text-xl px-0 pr-2 md:pr-3 lg:pr-4 mx-0">
-                        Read more
-                      </span>
-                      <img src={ArrowWhite} />
-                    </div>
-                  </Button>
                 </div>
               </div>
-              <div className="col-span-12 lg:col-span-6 flex justify-center">
+              <div className="col-span-12 lg:col-span-6 flex justify-center items-center">
                 <img src={ServiceDetail} className="pr-0 xl:pr-20" />
               </div>
             </div>
           </div>
         </div>
-        <div className="container w-11/12 mx-auto px-5 md:px-5 lg:px-0 xl:pl-8">
+        <div className="mainContainer py-14">
           <img src={Bar} />
           <h3 className="text-3xl font-bold py-2 ">Technologies stack</h3>
-          <div className="grid grid-cols-10 py-10 gap-x-8 sm:gap-x-14 md:gap-x-28 lg:gap-x-24 xl:gap-x-36 gap-y-16">
+          <div className="grid grid-cols-10 py-10 gap-x-8 sm:gap-x-14 md:gap-x-28 lg:gap-x-24 xl:gap-x-32 gap-y-16">
             {brands.map((item, index) => (
               <div
                 key={index}
@@ -287,8 +286,8 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div className="bg-blue100">
-          <div className="container mx-auto pt-10 px-2 md:px-5 lg:px-12 xl:px-28 lg:py-5 xl:py-14">
+        <div className="bg-blue100 py-5">
+          <div className="mainContainer lg:py-5 xl:py-14">
             <img src={WhiteBar} />
             <h3 className="text-white text-xl lg:text-4xl py-2 ">
               Our Work Flow
@@ -297,10 +296,10 @@ const Home = () => {
           </div>
         </div>
         <div className="grid grid-cols-12 gap-2">
-          <div className="col-span-0 lg:col-span-2">
+          <div className="col-span-0 lg:col-span-1 hidden lg:block">
             <img src={LeftGrid} className="h-full" />
           </div>
-          <div className="col-span-12 px-10 md:px-2 lg:col-span-8 my-10 lg:my-auto w-12/12 container mx-auto">
+          <div className="col-span-12 lg:col-span-10 py-24 lg:my-auto w-12/12 container mx-auto">
             <img src={BlackBar} />
             <h3 className="text-3xl font-bold py-2 ">Industries</h3>
             <p className="text-gray50 w-12/12 md:w-8/12 ">
@@ -318,12 +317,12 @@ const Home = () => {
               ))}
             </div>
           </div>
-          <div className="col-span-0 lg:col-span-2 flex justify-end">
+          <div className="col-span-0 lg:col-span-1 hidden lg:flex justify-end">
             <img src={RightGrid} className="h-full" />
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-5 lg:px-10 xl:px-24 py-0 pt-5 md:pt-0 lg:py-16">
+      <div className="mainContainer pt-16 lg:py-16">
         <div className="">
           <img src={BlackBar} />
           <h3 className="text-3xl font-bold py-2  w-12/12 lg:w-6/12 xl:w-4/12">

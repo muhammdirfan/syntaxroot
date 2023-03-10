@@ -1,5 +1,5 @@
 import { Button } from "flowbite-react";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BlackBar,
   BlueArrow,
@@ -89,13 +89,17 @@ const DevCyleData = [
 ];
 
 const WebDev = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header />
       <div className="banner bg-gray200">
-        <div className="container mx-auto px-5 md:px-24 pt-40 pb-10">
-          <div className="flex justify-center items-center flex-wrap lg:flex-nowrap">
-            <div className="pr-0 lg:pr-4">
+        <div className="mainContainer pt-40 pb-10">
+          <div className="grid grid-cols-12 gap-8 pr-4 items-center">
+            <div className="col-span-12 lg:col-span-6 pr-0 lg:pr-4">
               <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold leading-10 w-12/12 xl:w-10/12">
                 We digitize your business.
               </h2>
@@ -121,35 +125,35 @@ const WebDev = () => {
                 </div>
               </Button>
             </div>
-            <div className="w-full">
-              <img src={Webdevbanner} width="80%" />
+            <div className="col-span-12 lg:col-span-6 py-2 flex justify-end">
+              <img src={Webdevbanner} className="w-12/12 md:w-10/12" />
             </div>
           </div>
         </div>
         <div className="bg-blue200 h-96 my-36 blueBG">
-          <div className="container mx-auto pl-5 md:pl-24">
-            <div className="grid grid-cols-12 gap-8 items-center">
-              <div className="col-span-12 lg:col-span-5 w-12/12 p-5">
-                <h3 className="text-xl lg:text-3xl pt-5 font-bold">
+          <div className="mainContainer">
+            <div className="grid grid-cols-12 gap-y-8 gap-x-34 items-center">
+              <div className="col-span-12 lg:col-span-5 w-9/12">
+                <h3 className="text-xl lg:text-3xl pt-16 font-bold px-5">
                   Building the right solutions, using right tools
                 </h3>
-                <p className="text-white text-sm bg-blue200 h-0 lg:h-56 mt-10 pb-5">
+                <p className="text-white text-sm bg-blue200 h-0 lg:h-52 mt-10 pb-5 px-5">
                   At Syntax Root, we are always on top of using cutting-edge
                   tools to ensure your application(s) are optimized and
                   operating as they should.
                 </p>
               </div>
               <div className="col-span-12 lg:col-span-7 translate-y-20 lg:translate-y-16 flex justify-center">
-                <img src={WebdevImg} width="80%" />
+                <img src={WebdevImg} className="w-12/12 md:w-10/12" />
               </div>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-2 mt-60 px-5 md:px-10 bg-white">
+        <div className="grid grid-cols-12 gap-2 mt-60 bg-white">
           <div className="col-span-0 lg:col-span-1">
             <img src={LeftGrid} className="h-full" />
           </div>
-          <div className="col-span-12 px-10 md:px-2 py-14 lg:col-span-10 my-10 lg:my-auto w-12/12 container mx-auto">
+          <div className="col-span-12 py-14 px-8 md:px-0 lg:col-span-10 my-10 lg:my-auto w-12/12 container mx-auto">
             <img src={BlackBar} />
             <h3 className="text-3xl font-bold py-2 w-12/12 lg:w-6/12 ">
               Develop a professional web presence for your brand
@@ -174,7 +178,7 @@ const WebDev = () => {
           </div>
         </div>
         <div className="bg-gray200 py-16">
-          <div className="container mx-auto px-5 md:px-24">
+          <div className="mainContainer">
             <img src={BlackBar} />
             <h3 className="text-3xl font-bold py-2 ">Our Development Cycle</h3>
             <div className="grid grid-cols-12 gap-10 py-8 cycle mt-10 mx-auto">

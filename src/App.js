@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import { AppFooter } from "./components";
+import AboutUs from "./screens/AboutUs";
 import AppDev from "./screens/AppDev";
 import Career from "./screens/Career";
 import ContactUs from "./screens/ContactUs";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/IT-consultion" element={<ITConsultion />} />
           <Route path="/platform-selection" element={<PlatformSelection />} />
           <Route path="/career" element={<Career />} />
+          <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </div>
       <AppFooter />

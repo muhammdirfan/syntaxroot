@@ -1,5 +1,5 @@
 import { Button } from "flowbite-react";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BlackBar,
   BlueArrow,
@@ -88,11 +88,14 @@ const DevCyleData = [
 ];
 
 const QualityAssurance = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />
       <div className="banner bg-gray200">
-        <div className="container mx-auto px-5 md:px-24 pt-40 pb-10">
+        <div className="mainContainer pt-40 pb-10">
           <div className="flex justify-center items-center flex-wrap lg:flex-nowrap">
             <div className="pr-0 lg:pr-4">
               <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold leading-10 w-12/12 xl:w-10/12">
@@ -120,20 +123,20 @@ const QualityAssurance = () => {
                 </div>
               </Button>
             </div>
-            <div className="w-full">
-              <img src={QuailtyBanner} width="80%" />
+            <div className="w-full py-2 flex justify-end">
+              <img src={QuailtyBanner} className="w-12/12 md:w-10/12" />
             </div>
           </div>
         </div>
         <div className="bg-blue200 h-96 my-36 blueBG">
-          <div className="container mx-auto pl-5 md:pl-24">
-            <div className="grid grid-cols-12 gap-8 items-center">
-              <div className="col-span-12 lg:col-span-5 w-12/12 p-5">
-                <h3 className="text-xl lg:text-3xl pt-5 font-bold pr-5">
+          <div className="mainContainer">
+            <div className="grid grid-cols-12 gap-y-8 gap-x-34 items-center">
+              <div className="col-span-12 lg:col-span-5 w-12/12 md:10/12">
+                <h3 className="text-xl lg:text-3xl pt-24 font-bold px-5">
                   Every stage of your development process is monitored
-                  andvalidated.
+                  and validated.
                 </h3>
-                <p className="text-white text-sm bg-blue200 h-0 lg:h-56 mt-10 pb-5">
+                <p className="text-white text-sm bg-blue200 h-0 lg:h-52 mt-10 px-5 pb-5">
                   By employing unit testing, regression, integration, component,
                   system and end-to-end, we will ensure your application will be
                   operating defect-free. We streamline all sorts of testing
@@ -141,17 +144,17 @@ const QualityAssurance = () => {
                   should.
                 </p>
               </div>
-              <div className="col-span-12 lg:col-span-7 translate-y-20 lg:translate-y-16 flex justify-center">
-                <img src={QuailtyImg} width="80%" />
+              <div className="col-span-12 lg:col-span-7 translate-y-20 lg:translate-y-16 flex justify-end">
+                <img src={QuailtyImg} className="w-12/12 md:w-10/12" />
               </div>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-2 mt-60 py-14 px-5 md:px-10 bg-white">
+        <div className="grid grid-cols-12 gap-2 mt-60 py-14 px-6 md:px-0 bg-white">
           <div className="col-span-0 lg:col-span-1">
             <img src={LeftGrid} className="h-full" />
           </div>
-          <div className="col-span-12 px-10 md:px-2 lg:col-span-10 my-10 lg:my-auto w-12/12 container mx-auto">
+          <div className="col-span-12 px-10 md:px-0 lg:col-span-10 my-10 lg:my-auto w-12/12 container mx-auto">
             <img src={BlackBar} />
             <h3 className="text-3xl font-bold py-2 w-12/12 lg:w-5/12 ">
               Softwate QA testing service we provide.
@@ -176,7 +179,7 @@ const QualityAssurance = () => {
           </div>
         </div>
         <div className="bg-gray200 py-16">
-          <div className="container mx-auto px-5 md:px-24">
+          <div className="mainContainer">
             <img src={BlackBar} />
             <h3 className="text-3xl font-bold py-1 ">
               Our basic application testing process.

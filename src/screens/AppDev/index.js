@@ -1,5 +1,5 @@
 import { Button } from "flowbite-react";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Banner1,
   Banner2,
@@ -78,21 +78,25 @@ const DevCyleData = [
 ];
 
 const AppDev = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header />
       <div className="banner bg-gray200">
-        <div className="container mx-auto px-5 md:px-24 pt-40 pb-10">
-          <div className="flex justify-center items-center flex-wrap lg:flex-nowrap">
-            <div className="pr-0 lg:pr-4">
-              <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold leading-10">
+        <div className="mainContainer pt-40 pb-10">
+          <div className="grid grid-cols-12 gap-8 pr-4 items-center">
+            <div className="col-span-12 lg:col-span-6 pr-0 lg:pr-4">
+              <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold leading-10 w-12/12 xl:w-10/12">
                 Build a disruptive mobile app
               </h2>
-              <p className="text-gray50 pr-0 md:pr-10 lg:pr-4 mr-0 md:mr-16 lg:mr-5 py-4 w-12/12 xl:w-8/12">
+              <p className="text-gray50 pr-0 md:pr-10 lg:pr-4 mr-0 md:mr-16 lg:mr-5 py-4 w-12/12 xl:w-10/12">
                 Creative design and development of mobile app for every business
                 can generate extremely good results, brand loyalty and
                 dependable user retention. We work closely with our clients to
-                create user friendly yet smartly functional apps
+                create user friendly and smartly functional apps
               </p>
               <Button
                 outline={false}
@@ -110,18 +114,20 @@ const AppDev = () => {
                 </div>
               </Button>
             </div>
-            <img src={Banner2} width="80%" />
+            <div className="col-span-12 lg:col-span-6 py-2 flex justify-end">
+              <img src={Banner2} className="w-12/12 md:w-10/12" />
+            </div>
           </div>
         </div>
         <div className="bg-blue200 h-96 my-36 blueBG">
-          <div className="container mx-auto pl-5 md:pl-24">
-            <div className="grid grid-cols-12 gap-8 items-center">
-              <div className="col-span-12 lg:col-span-5 w-12/12 p-5">
-                <h3 className="text-xl lg:text-3xl pt-5 font-bold">
+          <div className="mainContainer">
+            <div className="grid grid-cols-12 gap-y-8 gap-x-34 items-center justify-between">
+              <div className="col-span-12 lg:col-span-5 w-10/12">
+                <h3 className="text-xl lg:text-3xl pt-5 font-bold px-5">
                   Intuitive and easy-to-use we build apps that build your
                   business
                 </h3>
-                <p className="text-white text-sm bg-blue200 h-0 lg:h-56 mt-10 pb-5">
+                <p className="text-white text-sm bg-blue200 h-0 lg:h-52 mt-10 pb-5 px-5">
                   We provide complete application design, integration and
                   management services. Whether it is a consumer oriented app or
                   a transformative enterprise-class solution, we lead the entire
@@ -129,22 +135,22 @@ const AppDev = () => {
                   ideation and concept to delivery, and to ongoing support.
                 </p>
               </div>
-              <div className="col-span-12 lg:col-span-7 translate-y-20 lg:translate-y-16 flex justify-center">
+              <div className="col-span-12 lg:col-span-7 translate-y-20 lg:translate-y-16 flex justify-end">
                 <img src={ServiceDetail} width="90%" />
               </div>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-2 mt-60 px-5 md:px-10 bg-white">
+        <div className="grid grid-cols-12 gap-2 mt-60 bg-white">
           <div className="col-span-0 lg:col-span-1">
             <img src={LeftGrid} className="h-full" />
           </div>
-          <div className="col-span-12 px-10 md:px-2 py-14 lg:col-span-10 my-10 lg:my-auto w-12/12 container mx-auto">
+          <div className="col-span-12 px-8 md:px-0 py-14 lg:col-span-10 my-10 lg:my-auto w-12/12 container mx-auto">
             <img src={BlackBar} />
-            <h3 className="text-3xl font-bold py-2 ">
+            <h3 className="text-3xl font-bold py-2">
               Our mobile app development services
             </h3>
-            <p className="text-gray50 w-12/12 md:w-5/12 ">
+            <p className="text-gray50">
               Some of the major industry sectors that we have worked and
               provided solutions for are:
             </p>
@@ -164,7 +170,7 @@ const AppDev = () => {
           </div>
         </div>
         <div className="bg-gray200 py-16">
-          <div className="container mx-auto px-5 md:px-24">
+          <div className="mainContainer">
             <img src={BlackBar} />
             <h3 className="text-3xl font-bold py-2 ">Our Development Cycle</h3>
             <div className="grid grid-cols-12 gap-10 py-8 cycle mt-10 mx-auto">

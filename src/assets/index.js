@@ -16,6 +16,7 @@ import QuailtyBanner from "./images/QuailtyBanner.svg";
 import QuailtyImg from "./images/QuailtyImg.png";
 import Webdevbanner from "./images/webdevbanner.svg";
 import WebdevImg from "./images/webdevImg.png";
+import ContactImg from "./images/contactImg.png";
 
 // Brands
 import Android from "./icons/brands/android.svg";
@@ -74,6 +75,8 @@ import Deployment from "./icons/deployment.svg";
 import Engineering from "./icons/engineering.svg";
 import QualityIcon from "./icons/quality-icon.svg";
 import Requirement from "./icons/requirement.svg";
+import ArrowDown from "./icons/arrow-down.svg";
+import ArrowBlack from "./icons/arrow-black.svg";
 
 // newIcons
 
@@ -104,6 +107,11 @@ import UXUI from "./icons/new/UXUI.svg";
 import Validation from "./icons/new/Validation.svg";
 import WebDesign from "./icons/new/WebDesign.svg";
 import Wireframse from "./icons/new/Wireframse.svg";
+import ContactBanner from "./images/contactBanner.svg";
+import ContactBg from "./images/contactBg.png";
+import Appoarch from "./icons/Appoarch.svg";
+import Mission from "./icons/Mission.svg";
+import Vision from "./icons/Vision.svg";
 
 // Clients
 import Ellipse11 from "./images/clients/Ellipse11.svg";
@@ -116,6 +124,15 @@ import Facebook from "./icons/social/facebook.svg";
 import Instagram from "./icons/social/instagram.svg";
 import Linkedin from "./icons/social/linkedin.svg";
 import Twitter from "./icons/social/twitter.svg";
+
+// Dropdown icons
+
+import PlatformSelection from "./icons/dropdown/platform_selection.svg";
+import AppDev from "./icons/dropdown/app_dev.svg";
+import ITConsult from "./icons/dropdown/IT_consulting.svg";
+import ProductDesign from "./icons/dropdown/product_design.svg";
+import QualityAssurance from "./icons/dropdown/quality_assurance.svg";
+import WebDev from "./icons/dropdown/web_dev.svg";
 
 export {
   Banner,
@@ -223,4 +240,18 @@ export {
   Validation,
   WebDesign,
   Wireframse,
+  ContactBanner,
+  ContactBg,
+  Appoarch,
+  Mission,
+  Vision,
+  ContactImg,
+  ArrowDown,
+  ArrowBlack,
+  PlatformSelection,
+  AppDev,
+  ITConsult,
+  ProductDesign,
+  QualityAssurance,
+  WebDev,
 };
